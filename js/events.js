@@ -30,7 +30,7 @@ blockRoundingCorners.addEventListener ('mousemove', roundingCorners);
 
 let out = '';
 function init (){
-	for (let i = 0; i < 300; i++){
+	for (let i = 1; i < 300; i++){
 		out+= ' <div class = "newBlock"> </div> ';
 	}
 	document.querySelector ('.out').innerHTML = out;
@@ -40,7 +40,7 @@ function init (){
 function roundingCorners (e){
 	console.log (e);
 	e.target.style.borderRadius =  event.offsetX + event.offsetY + 'px';
-	e.target.style.transition= 'all ease 1000ms';
+	e.target.style.transition= 'all ease 1s';
 	
 }
 //---------task4-------------------
@@ -51,12 +51,12 @@ let Img = document.querySelector('.images');
 Img.addEventListener ('click', setBackground);
 
 function setBackground (e){
-	// e = e || window.e; // для кроссбраузерности
+	e = e || window.e; // для кроссбраузерности
 	console.log (e);
+// blockBackground.style.backgroundImage = 'url('+e.srcElement.currentSrc+')'; // в фаерфоксе не срабатывает!!!
 
 	if (e.target) {
 		blockBackground.style.backgroundImage = 'url(images/folderOpen.png)' ;
-
 	}
 	if (e.target.alt=="1"){
 		blockBackground.style.backgroundImage = 'url(images/1.jpg) ';
@@ -70,14 +70,14 @@ function setBackground (e){
 }
 
 //---------task5-------------------
-let counter = 0 ;
+let margin = 100 ;
 let blockMovingDown = document.querySelector ('.block_Task5');
 blockMovingDown.addEventListener ('click', moveDown);
-function moveDown (event){
+function moveDown (){
 
 // blockMovingDown.style.marginLeft = counter + '10px';
-blockMovingDown.style.marginTop = counter + '10px';
-counter++;
+blockMovingDown.style.marginTop = margin + 'px';
+margin+=100;
 
 
 let outBlockCoordinates = document.querySelector ('.output_Task5');
@@ -100,18 +100,27 @@ function cleanUp (){
 }
 //---------task6-------------------
 
-let counterClick = 0 ;
+let marker = 1 ;
 let blockTrigger = document.querySelector ('.block_Task6');
 blockTrigger.addEventListener ('click', trigger);
-function trigger (event){
+function trigger (){
 
-	blockTrigger.style.marginLeft = counterClick + '90px';
-	counterClick++;
-	console.log (counterClick);
-	if (counterClick == 3){
-	// blockTrigger.style.marginLeft = a + '0px';
-	location.reload();  
+	if (marker == 1){
+		blockTrigger.style.marginLeft = '95px';
+		marker = 2;
+		console.log (1);
+	}
+	else if (marker == 2){
+		blockTrigger.style.marginLeft = '185px';
+		marker = 3;
+		console.log (2);
+	}
+	else if (marker == 3){
+		blockTrigger.style.marginLeft = '5px';
+		marker = 1;
+		console.log(0);
+	}
 }
-}
+
 
 //------------------------------------------
