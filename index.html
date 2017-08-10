@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>#hw6.js</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <div class="wrapper">
+
+      <br><h2> События </h2><br><hr>
+      <br><h3> Задача 1</h3> <br>
+      <p> Выведите координаты мыши относительно блока в момент
+        движения курсора мыши внутри блока. Координаты выводить под блоком. </p> <br>
+        <div class="block block_Task1"> </div>
+        <div class="output output_Task1"> наведите курсор мыши на блок </div>       
+        <br><br><hr><br>
+        <h3> Задача 2</h3><br>
+        <p> Создайте блок div, в качестве изображения фона установите ему
+          изображение закрытой папки. Добавьте событие, которое выполняется при
+          двойном клике на блоке и заменяет фон блока на изображение открытой
+          папки.  </p><br>
+
+          <div class="block block_Task2"></div>      
+          <br><br><hr><br>
+          <h3> Задача 3</h3><br>
+          <p> Добавьте в документ 300-400 блоков div квадратной формы с
+            размерами сторон 30px, и цветом фона. Добавление элементов выполните
+            с помощью цикла. Добавьте событие при наведении мыши, которое будет
+            скруглять данные блоки с помощью border-radius до круга. (Для
+            замедления эффекта скругления в CSS можно добавить transition).  </p><br>
+
+            <button class="enter enter_Task3">Узнать результат</button>
+            <button class="enter enter_CleanUp3"> очистить </button> 
+            <div class="blockRoundingCorners">
+              <div class="out"> </div>
+            </div>
+
+            <br><br><hr><br>
+            <h3> Задача 4</h3><br>
+            <p> Создайте div размерами ширина – 100%, высота 250px. Ниже
+              добавьте 4-5 изображений с одинаковыми классами, разного размера.
+              Добавьте событие, которое будет при клике на изображении
+              устанавливать его фоном блока div со свойством background-size: contain. </p><br>
+              
+              <div class="block block_Task4"></div> 
+              <hr>
+              <div class="images">
+                
+                <img src="images/1.jpg" alt="1">
+                <img src="images/2.jpg" alt="2">
+                <img src="images/3.jpg" alt="3">
+                <img src="images/4.jpg" alt="4">
+                <hr>
+              </div>
+              <br><br><hr><br> 
+              <h3> Задача 5</h3> <br>
+              <p> Создайте блок размерами 50x50px. Добавьте событие клик, так,
+                что при каждом клике на блоке он отодвигается на 100px вниз от
+                предыдущего положения.  </p><br>
+                <div class="block block_Task5"></div> 
+                <div class="output output_Task5"> кликните на блоке </div> 
+                <button class="enter enter_CleanUp"> очистить </button> 
+                <br><br><hr><br> 
+                <h3> Задача 6</h3><br>
+                <p> Реализуйте
+                  триггер переключатель следующего вида:
+                  При загрузке переключатель находится в первом положении.
+                  При клике, он переходит в положение два (средняя картинка), а в консоль
+                  выводится цифра 1.
+                  При следующем клике переключатель переходит в состояние три (нижняя
+                  картинка), а в консоль выводится цифра 2. При следующем клике,
+                  переключатель переходит в состояние 1 (верхняя картинка), а в консоль
+                  выводится 0. </p><br>
+                  <div class="image">
+                    <img src="images/1.png" alt="переключатель">
+                    <hr>
+                    <div class="trigger"> 
+                      <div class="block block_Task6"></div> 
+                    </div>
+                  </div><br>
+
+                  <br><br><hr><br>
+                </div>
+              </main>
+              <script src="js/events.js"></script>
+            </body>
+            </html>

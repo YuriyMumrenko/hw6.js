@@ -1,0 +1,119 @@
+*{
+
+	margin:0;
+	padding:0;
+}
+body{
+	
+	background: linear-gradient(to right, #F6EFD2, #CEAD78);	
+
+}
+
+.wrapper {
+	height: 100%;
+	margin: 0% auto ;
+	position: relative;
+	width: 1200px;
+	background-color: white;
+	border: 1px solid orange;
+	font:  14px Arial,Helvetica,sans-serif;
+}
+h2{
+	margin-left: 43%;
+}
+
+h3{
+	margin-left: 20px;
+}
+p,label, input, button{
+	margin-left: 15px;
+}
+img{
+	margin: 1% 0 0 8%;
+	box-shadow: 3px 3px 7px #020202;
+}
+
+button:hover {
+	background-color: #FFFFFF;
+}
+
+
+/*.enter_CleanUp {
+
+	position:fixed;
+	top:20px; left:50px;
+	width:70px;
+	}*/
+
+	/*-----------------------*/
+	.block{
+
+		width: 100px;
+		height: 100px;
+		border: 1px solid #E89361;
+		position: relative;
+		color: red;
+		margin-left: 5%;
+	}
+	.output, .enter_CleanUp{
+		margin: 1% 0 0 3%;
+	}
+	.block_Task2{
+		border: none;
+		background-image: url(../images/folder.png);
+	}
+
+	.newBlock{
+		margin: 2px;
+		width:30px;
+		height: 30px;
+		transition: all ease 500ms;
+		background-color: #CFAF7B;
+		float: left;
+		border: 1px solid #E89361;
+	}
+
+	.out{
+
+		width: 99%;
+		height: 400px;
+		margin: 5px 1px 5px 4px;
+		border: 1px solid #E89361;
+	}
+
+
+
+	.block_Task4{
+		width: 99%;
+		height: 250px;
+		margin: 5px 1px 5px 4px;
+		background: no-repeat;
+		background-size: contain;
+
+	}
+	.images{
+		background-color: #F4ECCE;
+
+	}
+	.block_Task5{
+		margin-left: 3%;
+		width: 50px;
+		height: 50px;
+		background-color: #F5EDD0;
+		font:  10px Arial,Helvetica,sans-serif;
+	}
+	.trigger{
+		width: 250px;
+		margin: 10px 1px 5px 4px;
+		background-color: #2F3F4F;
+		height: 60px;
+		padding: 3px;
+	}
+	.block_Task6{
+		margin: 3px 0 3px 5px;
+		background-color: #E89361;
+		width: 50px;
+		height: 50px;
+		border-radius: 8px;
+
+	}
