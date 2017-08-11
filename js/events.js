@@ -39,7 +39,7 @@ function init (){
 
 function roundingCorners (e){
 	console.log (e);
-	e.target.style.borderRadius =  event.offsetX + event.offsetY + 'px';
+	e.target.style.borderRadius = '50px';
 	e.target.style.transition= 'all ease 1s';
 	
 }
@@ -55,18 +55,18 @@ function setBackground (e){
 	console.log (e);
 // blockBackground.style.backgroundImage = 'url('+e.srcElement.currentSrc+')'; // в фаерфоксе не срабатывает!!!
 
-	if (e.target) {
-		blockBackground.style.backgroundImage = 'url(images/folderOpen.png)' ;
-	}
-	if (e.target.alt=="1"){
-		blockBackground.style.backgroundImage = 'url(images/1.jpg) ';
-	} else if (e.target.alt=="2"){
-		blockBackground.style.backgroundImage = 'url(images/2.jpg) ';
-	}else if (e.target.alt=="3"){
-		blockBackground.style.backgroundImage = 'url(images/3.jpg) ';
-	}else if (e.target.alt=="4"){
-		blockBackground.style.backgroundImage = 'url(images/4.jpg) ';
-	}
+if (e.target) {
+	blockBackground.style.backgroundImage = 'url(images/folderOpen.png)' ;
+}
+if (e.target.alt=="1"){
+	blockBackground.style.backgroundImage = 'url(images/1.jpg) ';
+} else if (e.target.alt=="2"){
+	blockBackground.style.backgroundImage = 'url(images/2.jpg) ';
+}else if (e.target.alt=="3"){
+	blockBackground.style.backgroundImage = 'url(images/3.jpg) ';
+}else if (e.target.alt=="4"){
+	blockBackground.style.backgroundImage = 'url(images/4.jpg) ';
+}
 }
 
 //---------task5-------------------

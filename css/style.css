@@ -28,6 +28,9 @@ h3{
 p,label, input, button{
 	margin-left: 15px;
 }
+p {
+	line-height: 1.5;
+}
 img{
 	margin: 1% 0 0 8%;
 	box-shadow: 3px 3px 7px #020202;
@@ -37,15 +40,6 @@ button:hover {
 	background-color: #FFFFFF;
 }
 
-
-/*.enter_CleanUp {
-
-	position:fixed;
-	top:20px; left:50px;
-	width:70px;
-	}*/
-
-	/*-----------------------*/
 	.block{
 
 		width: 100px;
